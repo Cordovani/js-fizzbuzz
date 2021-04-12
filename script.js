@@ -14,9 +14,9 @@ for (var i = 1; i <= 100; i++){
     // forse è più corretto considerare la 2nd e 3rd come (div3 || !div5) e (div5 || !div3)
     if (div3 && div5) {
         console.log("FizzBuzz");
-    } else if (div5 || !div3) {
+    } else if (div5 && !div3) {
         console.log("Buzz");
-    } else if (!div3 || div5) {
+    } else if (!div3 && div5) {
         console.log("Fizz");
     } else {
         console.log(i);
