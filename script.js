@@ -10,6 +10,8 @@ for (var i = 1; i <= 100; i++){
     
     // gestisco i 3 possibili casi 
     // stampo l'output
+    // div3 && div5 deve essere la prima condizione altrimenti l'if si ferma alla prima true
+    // forse è più corretto considerare la 2nd e 3rd come (div3 || !div5) e (div5 || !div3)
     if (div3 && div5) {
         console.log("FizzBuzz");
     } else if (div5) {
